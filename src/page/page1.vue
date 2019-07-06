@@ -1,5 +1,5 @@
 <template>
-  <a-carousel vertical>
+  <a-carousel :afterChange="onChange">
     <div><h3>1</h3></div>
     <div><h3>2</h3></div>
     <div><h3>3</h3></div>
@@ -8,6 +8,11 @@
 </template>
 <script>
 export default {
+  methods: {
+    onChange (a, b, c) {
+      console.log(a, b, c)
+    },
+  },
 }
 </script>
 <style scoped>
@@ -20,7 +25,7 @@ export default {
   overflow: hidden;
 }
 
-.ant-carousel >>> .slick-slide h3 {
+.ant-carousel >>> .slick-slide  h3 {
   color: #fff;
 }
 </style>

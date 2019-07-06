@@ -1,9 +1,11 @@
 //全局引入
-//import Vue from 'vue'
-import Vue from 'vue/dist/vue.js'
+import Vue from 'vue'
+// import Vue from 'vue/dist/vue.js'
 import App from './App'
+import router from './router'
 import Antd from 'ant-design-vue'
 import 'ant-design-vue/dist/antd.css'
+
 //router.start(App, '#app')
 Vue.config.productionTip = false
 
@@ -11,7 +13,9 @@ Vue.use(Antd)
 
 /* eslint-disable no-new */
 new Vue({
+  render: it => it(App),
   el: '#app',
+  router,
   components: { App },
   template: '<App/>'
 })
