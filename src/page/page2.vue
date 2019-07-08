@@ -4,14 +4,14 @@
     <h3>{{$route.query.title}}-{{$route.query.mcontent}}</h3>
     <h1>跳转过来就是成功啦~~~~~</h1>
 
-    <foot-bar></foot-bar>
+    <footbar class="foot"></footbar>
 </div>
 
 </template>
 <script>
   //导入组件
  import headBar from '../components/head-bar.vue'
- import footbar from '../components/foot-bar.vue'
+ import footbar from '../components/footbar.vue'
  
 export default {
     components: {

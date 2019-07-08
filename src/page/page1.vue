@@ -1,31 +1,25 @@
 <template>
-  <a-carousel :afterChange="onChange">
-    <div><h3>1</h3></div>
-    <div><h3>2</h3></div>
-    <div><h3>3</h3></div>
-    <div><h3>4</h3></div>
-  </a-carousel>
+<div>
+    <head-bar v-bind:title="title" class="head"></head-bar>
+    <h1>
+      欢迎来到设置页面
+    </h1>
+</div>
 </template>
 <script>
+import headbar from '../components/head-bar.vue'
+
 export default {
-  methods: {
-    onChange (a, b, c) {
-      console.log(a, b, c)
-    },
+  components:{
+    headbar,
   },
+   data() {
+      return {
+        title: this.$route.query.title,
+        mcontent: this.$route.query.mcontent
+      }
+    }
 }
 </script>
-<style scoped>
-/* For demo */
-.ant-carousel >>> .slick-slide {
-  text-align: center;
-  height: 160px;
-  line-height: 160px;
-  background: #364d79;
-  overflow: hidden;
-}
-
-.ant-carousel >>> .slick-slide  h3 {
-  color: #fff;
-}
+<style>
 </style>

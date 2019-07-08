@@ -12,7 +12,7 @@
             <router-link to="/page2">
                  <li>我的</li>
             </router-link>
-            <router-link to="/page1">
+            <router-link :to="{path:'/page1',query:{title:'设置',mcontent:'hhh'}}">
                  <li>设置</li>
             </router-link>
             <!-- <div style="clear: both"></div> -->
@@ -52,10 +52,12 @@ export default {
 
   li:hover {
     background-color: #91a7ff;
+    color: white;
   }
 
   li:active {
-    background-color: #d0d9ff;
+    background-color: #91a7ff;
+    color: white
   }
 
 </style>
