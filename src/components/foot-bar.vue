@@ -1,21 +1,21 @@
 <template>
     <div id="foot">
         <ul>
-            <router-link :to="{path:'/mainPage',query:{title:'首页',mcontent:'首页展示'}}">
+            <router-link to="/page2">
             <li>
                 首页
             </li>
             </router-link>
-            <router-link to="/count">
+            <router-link to="/page2">
                 <li>发现</li>
             </router-link>
-            <router-link to="/setting">
+            <router-link to="/page2">
                  <li>我的</li>
             </router-link>
-            <router-link to="/count">
+            <router-link to="/page1">
                  <li>设置</li>
             </router-link>
-            <div style="clear: both"></div>
+            <!-- <div style="clear: both"></div> -->
         </ul>
     </div>
 </template>

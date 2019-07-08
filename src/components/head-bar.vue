@@ -21,7 +21,7 @@
   }
 </script>
 
-<style scoped>
+<style>
   .head {
     width: 100%;
     height: 50px;
@@ -29,6 +29,7 @@
     text-align: center;
     background-color: cornflowerblue;
     color: white;
+    font-size: 1rem;
   }
 
   .title-left{
@@ -38,12 +39,12 @@
     line-height: 50px;
     width: 20%;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .title-right{
     display: inline-block;
-    float: right;
+    float:right;
     height: 50px;
     line-height: 50px;
     width: 20%;
