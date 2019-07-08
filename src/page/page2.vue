@@ -1,6 +1,6 @@
 <template>
 <div>
-    <head-bar v-bind:title="title" class="head"></head-bar>
+    <head-bar v-bind:title="this.$route.query.title" class="head"></head-bar>
     <h3>{{$route.query.title}}-{{$route.query.mcontent}}</h3>
     <h1>跳转过来就是成功啦~~~~~</h1>
 

@@ -1,15 +1,15 @@
 <template>
     <div id="foot">
         <ul>
-            <router-link to="/page2">
+            <router-link :to="{path:'/page2',query:{title:'首页',mcontent:'hhh'}}">
             <li>
                 首页
             </li>
             </router-link>
-            <router-link to="/page2">
+            <router-link :to="{path:'/table',query:{title:'发现',mcontent:'hhh'}}">
                 <li>发现</li>
             </router-link>
-            <router-link to="/page2">
+            <router-link :to="{path:'/page2',query:{title:'我的',mcontent:'hhh'}}">
                  <li>我的</li>
             </router-link>
             <router-link :to="{path:'/page1',query:{title:'设置',mcontent:'hhh'}}">
