@@ -54,7 +54,7 @@ const columns = [{
 }]
 
 const data = []
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < 100; i++) {
   data.push({
     key: i.toString(),
     name: `Edrward ${i}`,
@@ -111,7 +111,7 @@ export default {
   },
 }
 </script>
-<style scoped>
+<style>
 .editable-row-operations a {
   margin-right: 8px;
 }
